@@ -1,0 +1,4 @@
+id,name,department,designation,email,phone,basic,allowances,bonusRate
+E1001,Aarav Sharma,Engineering,Developer,aarav@example.com,9000000001,35000,8000,15
+E1002,Priya Patel,HR,HR Executive,priya@example.com,9000000002,30000,7000,10
+E1003,Rohan Mehta,Operations,Manager,rohan@example.com,9000000003,50000,12000,20
