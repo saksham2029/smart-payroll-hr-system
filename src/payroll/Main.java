@@ -4,9 +4,9 @@ import java.io.*; import java.net.*; import java.nio.charset.StandardCharsets; i
 import java.time.*; import java.util.*; import java.util.concurrent.*;
 public class Main {
  static final int PORT = Integer.parseInt(System.getenv().getOrDefault("PORT", "10000")), 
-static final Path ROOT = Paths.get("").toAbsolutePath(),
-    WEB = ROOT.resolve("web"),
-    DATA = ROOT.resolve("data");
+static final Path ROOT = Paths.get("").toAbsolutePath();
+static final Path WEB = ROOT.resolve("web");
+static final Path DATA = ROOT.resolve("data");
  static final Map<String,S> sessions=new ConcurrentHashMap<>();
  static void write(Path p,String s)throws IOException{if(!Files.exists(p))Files.writeString(p,s);}
  public static void main(String[]z)throws Exception{
